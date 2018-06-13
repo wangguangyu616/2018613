@@ -2,7 +2,7 @@ const express = require('express')
 const pug = require('pug')
 
 const app = express()
-
+//王光宇
 let rawList=[
   {id: 1, name: "朱胜利" , sex: "boy", xueyuan: "软件学院" , xibie: "集成电路" , num:"3117390004" },
   {id: 2, name: "王光宇" , sex: "boy", xueyuan: "软件学院" , xibie: "集成电路" , num:"3117390011"},
@@ -18,7 +18,7 @@ app.set('views', './views')
 app.get('/token', function (req, res) {
   res.send("token");
 })
-
+//张银书 刘信伶
 app.get('/list', function(req, res) {
   res.render('list', {list: rawList})
 })
@@ -31,7 +31,7 @@ app.get('/delete/:id',function(req,res){
   })
   res.redirect("/list")
 })
-
+//朱博迪 朱胜利 万寒月
 app.get('/add',function(req,res){
   res.render('add',{addList:
     ['']
